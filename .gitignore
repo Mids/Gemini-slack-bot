@@ -21,6 +21,7 @@ ENV/
 
 # Slack bot specific
 sessions/
+memory/
 *.session
 config/slack_config.json
 .env

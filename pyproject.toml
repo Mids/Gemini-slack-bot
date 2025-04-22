@@ -7,7 +7,7 @@ authors = [
 ]
 requires-python = ">=3.12"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 dependencies = [
     "flask>=2.3.3",
     "slack-bolt>=1.18.0",
@@ -26,3 +26,7 @@ build-backend = "setuptools.build_meta"
 start = "python slack_bot.py"
 test = "python test_gemini.py"
 demo = "python demo_bot.py"
+
+[tool.setuptools]
+py-modules = ["slack_bot"]
+packages.find = {exclude = ["config", "sessions"]}

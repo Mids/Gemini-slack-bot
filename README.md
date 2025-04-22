@@ -10,6 +10,7 @@ A Slack chatbot that uses Google's Gemini 2.5 Pro API to respond to messages and
 - Built with Flask and Slack Bolt Framework
 - **Persistent Memory**: Maintains separate conversation history for each user
 - **Context-Aware Responses**: Uses previous conversation context to generate more relevant responses
+- **Google Search Grounding**: Uses Google Search to ground responses in real-time web information
 
 ## Prerequisites
 
@@ -123,7 +124,7 @@ When using the demo bot, you can:
 
 ### Model Information
 
-This project uses the `gemini-2.5-pro-exp-03-25` model, which is the experimental version of Google's Gemini 2.5 Pro model. This model is available with the free tier of the Gemini API. If this model is not available with your API key, the application will fall back to other available models like `gemini-1.5-pro`.
+This project uses the `gemini-2.5-flash-preview-04-17` model, which is the experimental version of Google's Gemini 2.5 Pro model. This model is available with the free tier of the Gemini API. If this model is not available with your API key, the application will fall back to other available models like `gemini-1.5-pro`.
 
 ## Development
 

@@ -756,5 +756,9 @@ class SlackBotManager:
 
 # Create and run the bot manager
 if __name__ == "__main__":
+    # Get port from environment variable or default to 8080 for Cloud Run compatibility
+    port = int(os.environ.get("PORT", 8080))
+    
     bot_manager = SlackBotManager()
-    bot_manager.run()
+    # Run the Flask app on 0.0.0.0 to be accessible externally
+    bot_manager.run(host='0.0.0.0', port=port)
